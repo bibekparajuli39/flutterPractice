@@ -14,6 +14,7 @@ class Notepad extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
         centerTitle: true,
       ),
+
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -43,7 +44,9 @@ class Notepad extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          print("like button pressed");
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color.fromARGB(
                             255,
@@ -62,7 +65,9 @@ class Notepad extends StatelessWidget {
                         ),
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          print("Subscribe button pressed");
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color.fromARGB(255, 255, 0, 0),
                           shape: RoundedRectangleBorder(
