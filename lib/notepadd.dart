@@ -45,6 +45,7 @@ class Notepad extends StatelessWidget {
                     children: [
                       ElevatedButton(
                         onPressed: () {
+                          // ignore: avoid_print
                           print("like button pressed");
                         },
                         style: ElevatedButton.styleFrom(
@@ -66,6 +67,7 @@ class Notepad extends StatelessWidget {
                       ),
                       ElevatedButton(
                         onPressed: () {
+                          // ignore: avoid_print
                           print("Subscribe button pressed");
                         },
                         style: ElevatedButton.styleFrom(

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:practiceapp/notepadd.dart';
+
+import 'package:practiceapp/screens/product_screen.dart';
+import 'package:practiceapp/services/api_service.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "my app",
       debugShowCheckedModeBanner: false,
-      home: Notepad(),
+      home: ProductScreen(ApiService()),
     );
   }
 }
